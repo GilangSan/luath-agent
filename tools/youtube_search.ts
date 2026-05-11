@@ -1,4 +1,5 @@
 import type { Tool, ToolContext, ToolResult } from '../src/types.js'
+// @ts-ignore
 import yts from 'yt-search'
 
 /**
@@ -46,7 +47,7 @@ export const youtubeSearchTool: Tool = {
 
       return {
         success: true,
-        results: videos.map(v => ({
+        results: videos.map((v: any) => ({
           title: v.title,
           url: v.url,
           duration: v.timestamp,
