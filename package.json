@@ -1,0 +1,23 @@
+{
+  "name": "wa-ai-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --ignore ./auth_info src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "dotenv": "^16.4.5",
+    "pino": "^9.3.2",
+    "sharp": "^0.34.5",
+    "wa-sticker-formatter": "^4.4.4",
+    "yt-search": "^2.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
